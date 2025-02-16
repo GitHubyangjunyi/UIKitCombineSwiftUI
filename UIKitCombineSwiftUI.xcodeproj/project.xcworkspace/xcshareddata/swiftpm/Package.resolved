@@ -1,0 +1,33 @@
+{
+  "originHash" : "bee82ff8797b86b915c6f92cee5d68ebb7acf555e58e5f61b578b5a8fe788377",
+  "pins" : [
+    {
+      "identity" : "appledarthvader",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Swift-Package/AppleDarthVader.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "df98dcd95808b6386f6844aa0a039d3f869db599"
+      }
+    },
+    {
+      "identity" : "rxswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ReactiveX/RxSwift",
+      "state" : {
+        "branch" : "main",
+        "revision" : "68647dbe4d90d54e772ecba80656a04c38fb9bdb"
+      }
+    },
+    {
+      "identity" : "then",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/devxoul/Then",
+      "state" : {
+        "branch" : "master",
+        "revision" : "d41ef523faef0f911369f79c0b96815d9dbb6d7a"
+      }
+    }
+  ],
+  "version" : 3
+}

@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1C9F2D542D60D81600CADCD2 /* AppleDarthVader in Frameworks */ = {isa = PBXBuildFile; productRef = 1C9F2D532D60D81600CADCD2 /* AppleDarthVader */; };
+		1C9F2D562D60D81600CADCD2 /* AppleDarthVaderOC in Frameworks */ = {isa = PBXBuildFile; productRef = 1C9F2D552D60D81600CADCD2 /* AppleDarthVaderOC */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		1C8B34422D60609100A876DB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -65,6 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C9F2D562D60D81600CADCD2 /* AppleDarthVaderOC in Frameworks */,
+				1C9F2D542D60D81600CADCD2 /* AppleDarthVader in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +132,8 @@
 			);
 			name = UIKitCombineSwiftUI;
 			packageProductDependencies = (
+				1C9F2D532D60D81600CADCD2 /* AppleDarthVader */,
+				1C9F2D552D60D81600CADCD2 /* AppleDarthVaderOC */,
 			);
 			productName = UIKitCombineSwiftUI;
 			productReference = 1C8B342B2D60609000A876DB /* UIKitCombineSwiftUI.app */;
@@ -208,6 +217,9 @@
 			);
 			mainGroup = 1C8B34222D60609000A876DB;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				1C9F2D522D60D81600CADCD2 /* XCRemoteSwiftPackageReference "AppleDarthVader" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 1C8B342C2D60609000A876DB /* Products */;
 			projectDirPath = "";
@@ -569,6 +581,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1C9F2D522D60D81600CADCD2 /* XCRemoteSwiftPackageReference "AppleDarthVader" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swift-Package/AppleDarthVader.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1C9F2D532D60D81600CADCD2 /* AppleDarthVader */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1C9F2D522D60D81600CADCD2 /* XCRemoteSwiftPackageReference "AppleDarthVader" */;
+			productName = AppleDarthVader;
+		};
+		1C9F2D552D60D81600CADCD2 /* AppleDarthVaderOC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1C9F2D522D60D81600CADCD2 /* XCRemoteSwiftPackageReference "AppleDarthVader" */;
+			productName = AppleDarthVaderOC;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1C8B34232D60609000A876DB /* Project object */;
 }

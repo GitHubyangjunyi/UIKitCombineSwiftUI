@@ -20,7 +20,7 @@ class PostViewModel: ObservableObject {
         do {
             try await Task.sleep(nanoseconds: 2_000_000_000)
             let newPosts = (1...3).map { index in
-                Post(user: ("NewUser\(index)", "avatar\(index)"),
+                Post(user: ("NewUser\(index)", "image\(index)"),
                      headline: "",
                      content: "传统的 \(Int.random(in: 1...3000))极端，一带保有弹性，使得\(Int.random(in:1...3000))极端创作者可以“保留部分权利知识共享提供多种可供选择的授权形享创作，授予其他代知识产权以及版权法在信息共",
                      images: (1...Int.random(in: 1...3)).map { "image\($0)" },
@@ -47,7 +47,7 @@ class PostViewModel: ObservableObject {
         do {
             try await Task.sleep(nanoseconds: 2_000_000_000)
             let newPosts = (1...3).map { index in
-                Post(user: ("NewUser\(index)", "avatar\(index)"),
+                Post(user: ("NewUser\(index)", "image\(index)"),
                      headline: "",
                      content: "传统的 \(Int.random(in: 1...3000))极端，一带保有弹性，使得\(Int.random(in:1...3000))极端创作者可以“保留部分权利知识共享提供多种可供选择的授权形享创作，授予其他代知识产权以及版权法在信息共",
                      images: (1...Int.random(in: 1...3)).map { "image\($0)" },

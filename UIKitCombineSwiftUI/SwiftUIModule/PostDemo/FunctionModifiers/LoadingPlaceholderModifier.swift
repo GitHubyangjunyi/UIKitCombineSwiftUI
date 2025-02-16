@@ -29,6 +29,9 @@ struct LoadingPlaceholderModifier<T>: ViewModifier {
                     .frame(width: width, height: height)
                     .background(Color.gray.opacity(0.2))
                     .cornerRadius(10)
+                    .onTapGesture {
+                        
+                    }
             }
         }
     }

@@ -65,9 +65,25 @@ struct PostListView: View {
                     
                     LazyVStack(spacing: 25) {
                         ForEach(postViewModel.posts.indices, id: \.self) { index in
-                            let post = postViewModel.posts[index]
-                            PostCell(post: post)
+                            PostCell(post: postViewModel.posts[index])
                         }
+                    }
+                    
+                    // MARK: - 上拉加载更多
+                    HStack {
+                        Spacer()
+                        Text("加载中...")
+                            .font(.footnote)
+                            .foregroundColor(.gray)
+                            .scrollTargetLayout()
+                            .onScrollVisibilityChange { isVisible in
+                                if isVisible && !postViewModel.isLoading {
+                                    Task {
+                                        await postViewModel.laodMoreData()
+                                    }
+                                }
+                            }
+                        Spacer()
                     }
                 }
             }
